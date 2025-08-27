@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darl Real Estate & Construction</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7fafc;
+    }
+    .header-bg {
+      background-color: #1e3a5f; /* dark blue */
+      color: white;
+    }
+    .section-bg {
+      background-color: #ffffff;
+    }
+    .text-accent {
+      color: #facc15; /* yellow */
+    }
+    .bg-accent {
+      background-color: #facc15; /* yellow */
+    }
+    .nav-link.active {
+      color: #facc15;
+      font-weight: 700;
+      border-bottom: 2px solid #facc15;
+    }
+    /* Sticky footer styles */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="header-bg shadow-lg py-4">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex flex-col sm:flex-row items-center justify-between">
+        <!-- Logo + Brand -->
+        <a href="#" class="flex items-center space-x-2">
+          <!-- <img src="your-logo.png" alt="DARL Logo" class="h-12 w-auto"> -->
+          <span class="text-2xl sm:text-3xl font-bold text-white hover:text-accent transition duration-300">
+            DARL Real Estate
+          </span>
+        </a>
+        <!-- Nav Links -->
+        <div class="mt-4 sm:mt-0 flex flex-wrap justify-center sm:space-x-8 space-x-4">
+          <a href="#" data-section="home" class="nav-link text-lg text-gray-300 hover:text-white transition duration-300">Home</a>
+          <a href="#" data-section="about-us" class="nav-link text-lg text-gray-300 hover:text-white transition duration-300">About Us</a>
+          <a href="#" data-section="services" class="nav-link text-lg text-gray-300 hover:text-white transition duration-300">Our Projects</a>
+          <a href="#" data-section="gallery" class="nav-link text-lg text-gray-300 hover:text-white transition duration-300">Gallery</a>
+          <a href="#" data-section="contact-us" class="nav-link text-lg text-gray-300 hover:text-white transition duration-300">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Home Section -->
+    <section id="home" class="page-content active">
+      <div class="section-bg rounded-lg shadow-xl p-8 mb-12 text-center">
+        <div class="flex justify-center mb-6">
+          <div class="bg-gray-300 rounded-lg h-20 w-20 flex items-center justify-center text-gray-500 text-lg font-semibold">
+            Logo
+          </div>
+        </div>
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+          Redefining the Future of Real Estate
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          Darl Real Estate & Construction Company aims to make a significant contribution to the future of Real Estate Construction projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us" class="page-content hidden">
+      <div class="section-bg rounded-lg shadow-xl p-8 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-yellow-400 pb-2">About Us</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Company Background</h3>
+            <p class="text-gray-600 mb-4">
+              Darl Real Estate & Construction Company was Incorporated in 2023. The Company was formed to develop well designed, competitively priced Real Estate in Nairobi.
+            </p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+            <p class="text-gray-600">
+              To be a recognised leader in the Real Estate and Construction Field in Kenya and East Africa, while maintaining our authentic level of services founded on the basic core values of integrity and partnership.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+            <p class="text-gray-600 mb-4">
+              We are on a mission to enhance the associations we partner with; while operating in an ethical and socially conscious manner.
+            </p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Core Values</h3>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+              <li><span class="font-semibold text-gray-800">Integrity:</span> Highest standard of ethical behaviour and transparency.</li>
+              <li><span class="font-semibold text-gray-800">Partnership:</span> Success depends on partnerships with all stakeholders.</li>
+              <li><span class="font-semibold text-gray-800">Excellence:</span> Commitment to professional excellence and quality services.</li>
+              <li><span class="font-semibold text-gray-800">TeamWork:</span> Combining expertise to deliver optimum solutions.</li>
+              <li><span class="font-semibold text-gray-800">Innovation:</span> Creativity and ingenuity for continued success.</li>
+              <li><span class="font-semibold text-gray-800">Leadership:</span> Spirit of leadership instilled in every employee.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Projects -->
+    <section id="services" class="page-content hidden">
+      <div class="section-bg rounded-lg shadow-xl p-8 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-yellow-400 pb-2">Our Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Property Acquisition & Development</h3>
+            <p class="text-gray-600">Integrated team approach to development to ensure projects address all design and lifestyle parameters.</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Real Estate Brokerage</h3>
+            <p class="text-gray-600">Comprehensive services portfolio including expert brokerage to connect clients with properties.</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Property Management</h3>
+            <p class="text-gray-600">Professional management of real estate assets to ensure their value and performance.</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Real Estate Loan Syndication</h3>
+            <p class="text-gray-600">Expert assistance in securing and structuring real estate loans for various projects.</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Environmental Management</h3>
+            <p class="text-gray-600">Sustainable and environmentally conscious management of projects and properties.</p>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md transition transform hover:scale-105 duration-300">
+            <h3 class="text-2xl font-semibold text-accent mb-2">Construction Materials Supply</h3>
+            <p class="text-gray-600">Reliable supplying of high-quality construction materials to ensure project success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="page-content hidden">
+      <div class="section-bg rounded-lg shadow-xl p-8 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-yellow-400 pb-2">Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 1
+          </div>
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 2
+          </div>
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 3
+          </div>
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 4
+          </div>
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 5
+          </div>
+          <div class="bg-gray-300 rounded-lg h-48 flex items-center justify-center text-gray-500 text-xl font-semibold">
+            Image Placeholder 6
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="page-content hidden">
+      <div class="section-bg rounded-lg shadow-xl p-8 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 border-b-2 border-yellow-400 pb-2">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Get in touch</h3>
+            <p class="text-gray-600 mb-4">We'd love to hear from you! Reach out to us for any inquiries.</p>
+            <div class="flex items-center space-x-4 mb-2">
+              <span class="text-accent font-bold">✉</span>
+              <span class="text-gray-700">info@dari.co.ke / darirealtor@gmail.com</span>
+            </div>
+            <div class="flex items-center space-x-4 mb-2">
+              <span class="text-accent font-bold">☎</span>
+              <span class="text-gray-700">0719 364 201 / 0751 774 706</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <span class="text-accent font-bold">📍</span>
+              <span class="text-gray-700">P.O Box 30039, G.P.O, NAIROBI</span>
+            </div>
+          </div>
+          <!-- Contact Form -->
+        
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1e3a5f] text-gray-300 py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 DARL Real Estate & Construction Company Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const pageContents = document.querySelectorAll('.page-content');
+
+      const showPage = (sectionId) => {
+        pageContents.forEach(section => section.classList.add('hidden'));
+        document.getElementById(sectionId).classList.remove('hidden');
+        navLinks.forEach(link => link.classList.remove('active'));
+        document.querySelector(`[data-section="${sectionId}"]`).classList.add('active');
+      };
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const sectionId = event.target.getAttribute('data-section');
+          showPage(sectionId);
+        });
+      });
+
+      showPage('home');
+    });
+  </script>
+</body>
+</html>
